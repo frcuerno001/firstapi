@@ -1,11 +1,10 @@
-const express = require('express');
-const app = express();
+var express = require('express');
+var app = express();
+var cors = require('cors')
 
-app.use(cors({
-    origin: '*'
-}));
+app.use(cors());
 
-const location = [
+var location = [
     {
         "id": "1",
         "item": "Millenium"
