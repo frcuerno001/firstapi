@@ -8,7 +8,56 @@ var location = [
     {
         "id": "1",
         "item": "Millenium"
+    },
+    {
+        "id": "2",
+        "item": "Galerias"
+    },
+    {
+        "id": "3",
+        "item": "Multiplaza"
+    },
+    {
+        "id": "4",
+        "item": "SOHO"
+    },
+    {
+        "id": "5",
+        "item": "Plaza Merliot"
+    },
+    {
+        "id": "6",
+        "item": "Plaza Madero"
+    },
+    {
+        "id": "7",
+        "item": "Plaza Santa Elena"
+    },
+    {
+        "id": "8",
+        "item": "Avante"
+    },
+    {
+        "id": "9",
+        "item": "El Encuentro Lourdes"
+    },
+    {
+        "id": "10",
+        "item": "El Encuentro Opico"
+    },
+    {
+        "id": "11",
+        "item": "Metrocentro"
+    },
+    {
+        "id": "12",
+        "item": "Metrosur"
+    },
+    {
+        "id": "13",
+        "item": "Plaza los olivos"
     }
+
 ];
 
 app.get('/',(req,res) => {
