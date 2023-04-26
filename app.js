@@ -1,8 +1,12 @@
 var express = require('express');
 var app = express();
 var cors = require('cors')
+var bodyParser = require('body-parser');
 
 app.use(cors());
+app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 var location = [
     {
@@ -59,6 +63,13 @@ var location = [
     }
 
 ];
+
+
+app.post('/location', (req, res) => {
+    console.log(res.body);
+    location.push(res.body);
+    res.send(201);
+  });
 
 app.get('/',(req,res) => {
     res.send("Welcome to first app Cuerno")
