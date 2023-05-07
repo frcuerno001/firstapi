@@ -112,7 +112,7 @@ app.put('/places/:id', async(req,res) => {
 mongoose.
 connect('mongodb+srv://admin:costafari@nodeapidb.mqwzbpi.mongodb.net/Node-API?retryWrites=true&w=majority')
 .then(() => {
-    app.listen(4000, () => {
+    app.listen(3000, () => {
         console.log("Node API app is running on port 4000");
     });    
     console.log('Connected to mongoDB');
